@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <View
+            app:layout_widthPercent="100%"
+            android:layout_height="100dp"
+            app:layout_marginTopPercent="90%"
+            android:background="#01a2ff" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ImageView
+            android:id="@+id/first"
+            app:layout_widthPercent="15%"
+            app:layout_heightPercent="10%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="90%"
+            android:src="@drawable/first"/>
+        <ImageView
+            android:id="@+id/sec"
+            app:layout_widthPercent="13%"
+            app:layout_heightPercent="10%"
+            app:layout_marginLeftPercent="23%"
+            app:layout_marginTopPercent="90%"
+            android:src="@drawable/sec" />
+        <ImageView
+            android:id="@+id/plus"
+            app:layout_widthPercent="16%"
+            app:layout_heightPercent="15%"
+            app:layout_marginLeftPercent="42%"
+            app:layout_marginTopPercent="87%"
+            android:src="@drawable/plus" />
+        <ImageView
+            android:id="@+id/third"
+            app:layout_widthPercent="13%"
+            app:layout_heightPercent="10%"
+            app:layout_marginLeftPercent="65%"
+            app:layout_marginTopPercent="90%"
+            android:src="@drawable/third"
+            />
+        <ImageView
+            android:id="@+id/four"
+            app:layout_widthPercent="13%"
+            app:layout_heightPercent="10%"
+            app:layout_marginLeftPercent="82%"
+            app:layout_marginTopPercent="90%"
+            android:src="@drawable/four"
+            />
+
+    </android.support.percent.PercentFrameLayout>
+<android.support.design.widget.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:menu="@menu/nav_menu"
+    app:headerLayout="@layout/nav_header"
+    />
+
+    </android.support.v4.widget.DrawerLayout>
+
